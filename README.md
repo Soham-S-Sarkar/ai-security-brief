@@ -27,5 +27,30 @@ Before shipping this to a real enterprise:
 - Summary generated in under 3 seconds
 - Safe fallback when confidence is low
 
+## Success Metrics
+
+### Layer 1 — Model Quality
+- Severity classification accuracy: >95%
+- Hallucination rate on proper nouns: 0%
+- Confidence calibration: tracked from day 1
+
+### Layer 2 — Product Experience
+- Task completion rate: >80%
+- Time to generate brief: <5 minutes
+- Analyst correction rate: <20%
+- Abandonment at AI step: <5%
+
+### Layer 3 — Business Impact
+- Analyst hours saved per week (baseline TBD)
+- Security error rate vs pre-AI baseline
+- Override rate trend: should decrease week/week
+
+### The Metric I'm Watching Most
+Override rate over time.
+Decreasing = trust being earned.
+Flat or increasing = model or UX problem.
+Zero from day one = users not actually checking
+= safety risk.
+
 ## Status
 🚧 In Progress — Learning + Building in Public
