@@ -1,0 +1,46 @@
+{
+  "alerts": [
+    {
+      "id": "ALT-001",
+      "timestamp": "2026-05-09T03:47:00Z",
+      "source": "Microsoft Sentinel",
+      "raw_alert": "Unusual authentication pattern detected. User account j.smith@company.com logged in from IP 185.234.219.50 (geolocation: Russia) at 03:47 UTC. Account normally authenticates from London, UK during business hours. 15 failed attempts preceded successful login. Account has access to financial systems and customer database.",
+      "expected_severity": "High"
+    },
+    {
+      "id": "ALT-002", 
+      "timestamp": "2026-05-09T09:15:00Z",
+      "source": "Qualys",
+      "raw_alert": "SSL certificate for api.internal.company.com will expire in 14 days on 2026-05-23. Certificate authority: DigiCert. Affects internal API gateway used by development and staging environments only.",
+      "expected_severity": "Medium"
+    },
+    {
+      "id": "ALT-003",
+      "timestamp": "2026-05-09T14:22:00Z", 
+      "source": "CrowdStrike Falcon",
+      "raw_alert": "Ransomware signature detected on workstation DESKTOP-HR-042 in HR department network segment. File encryption activity observed across 3,847 files in past 6 minutes. Lateral movement detected to file server FS-HR-01. Network isolation not yet applied.",
+      "expected_severity": "Critical"
+    },
+    {
+      "id": "ALT-004",
+      "timestamp": "2026-05-09T11:30:00Z",
+      "source": "Palo Alto Cortex",
+      "raw_alert": "Data exfiltration pattern detected from workstation DESKTOP-FIN-019 assigned to user m.chen@company.com. 2.3GB transferred to external IP 203.0.113.45 over port 443 in last 2 hours. Destination IP flagged in threat intelligence database as known data broker.",
+      "expected_severity": "Critical"
+    },
+    {
+      "id": "ALT-005",
+      "timestamp": "2026-05-09T16:45:00Z",
+      "source": "Splunk SIEM",
+      "raw_alert": "Privilege escalation attempt detected. Service account svc_backup attempted to add itself to Domain Admins group at 16:44 UTC. Attempt blocked by policy. Account svc_backup should not have interactive login capabilities. Last legitimate use: automated backup job at 02:00 UTC daily.",
+      "expected_severity": "High"
+    },
+    {
+      "id": "ALT-006",
+      "timestamp": "2026-05-09T08:00:00Z",
+      "source": "Qualys",
+      "raw_alert": "Routine vulnerability scan complete. 3 low severity CVEs detected on development server DEV-03. All relate to outdated npm packages. No production systems affected. Remediation window: next sprint.",
+      "expected_severity": "Low"
+    }
+  ]
+}
