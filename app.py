@@ -10,7 +10,7 @@ st.set_page_config(
 
 st.title("🛡️ AI Security Brief Generator")
 st.markdown("""
-**Built by [Soham Sarkar] — Senior PM at BT**  
+**Built by Soham Sarkar — Senior PM at BT**  
 Transforms raw security alerts into 
 structured CISO-ready briefings in seconds.
 """)
@@ -83,6 +83,16 @@ def generate_brief(alert_text, key):
     - Never skip any section
     - Never use jargon in the SUMMARY
     - If ambiguous, always use CONFIDENCE: Low
+        - If fewer than 3 specific indicators are 
+          present (system names, IPs, usernames, 
+          file counts, timestamps), you must return
+          CONFIDENCE: Low AND SEVERITY: Low
+        - Never return Medium or higher severity 
+          without at least one specific named 
+          system or user in the alert
+        - If the alert contains no specific details,
+          your SUMMARY must begin with: 
+          "Insufficient detail to assess threat."
     """
     response = client.chat.completions.create(
         model="openrouter/auto",
