@@ -19,8 +19,24 @@ An AI tool that:
 - Classifies severity (Critical / High / Medium)
 - Drafts a briefing ready to send to the CISO
 
+
 ## My Product Decisions
-(To be updated as I build)
+1. **Confidence score is mandatory** — analysts 
+   need to know when to trust AI vs investigate manually
+
+2. **Minimum evidence threshold** — fewer than 3 
+   specific indicators forces CONFIDENCE: Low.
+   Discovered via adversarial testing. Vague alerts 
+   were returning Medium confidence — dangerous in 
+   a security context.
+
+3. **One recommended action only** — multiple options 
+   cause analyst paralysis in high-stress situations
+
+4. **Model agnostic architecture** — built on OpenRouter 
+   so the tool works regardless of which AI provider 
+   is available. Validated when Gemini's API failed 
+   during build.
 
 ## Eval Criteria
 Before shipping this to a real enterprise:
@@ -55,4 +71,7 @@ Zero from day one = users not actually checking
 = safety risk.
 
 ## Status
-🚧 In Progress — Learning + Building in Public
+✅ Live — Deployed May 2026
+🌐 Try it: https://ai-security-brief-by-soham.streamlit.app
+📄 Full PRD: See PRD.md
+🔨 Built in public — follow the journey on LinkedIn
