@@ -1,10 +1,10 @@
 # Product Requirements Document
 ## AI Security Brief Generator
-**Author:** [Your Name] — Senior PM at BT  
+**Author:** Soham Sarkar — Senior PM at BT  
 **Version:** 1.0  
 **Status:** Live — Deployed May 2026  
-**Live Product:** [your streamlit URL]  
-**GitHub:** [your GitHub URL]  
+**Live Product:** https://ai-security-brief-by-soham.streamlit.app/ 
+**GitHub:** https://github.com/Soham-S-Sarkar/ai-security-brief/ 
 
 ---
 
