@@ -1,6 +1,6 @@
 # AI Security Brief
 
-![AI Security Brief Generator](screenshot.png)
+![AI Security Brief Generator](Screenshot_20260511-221317~2.png)
 
 ## Problem
 Security teams are overwhelmed with alerts.
