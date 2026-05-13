@@ -1,5 +1,7 @@
 # AI Security Brief
 
+![AI Security Brief Generator](screenshot.png)
+
 ## Problem
 Security teams are overwhelmed with alerts.
 Analysts spend 60% of their time reading and 
